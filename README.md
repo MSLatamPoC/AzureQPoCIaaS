@@ -11,3 +11,7 @@ Este escenario tiene como objetivo probar algunas de las capacidades de infraest
 - Velocidad en almacenamiento
 
 ## Arquitectura de la solucion
+esta es la arquitectura que se utilia para este escanrio 
+[simple-iaas.jpg](https://postimg.cc/HrdLkXwg)
+
+### Descripcion del escenario
