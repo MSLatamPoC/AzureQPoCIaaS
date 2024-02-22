@@ -11,7 +11,11 @@ Este escenario tiene como objetivo probar algunas de las capacidades de infraest
 - Velocidad en almacenamiento
 
 ## Arquitectura de la solucion
-esta es la arquitectura que se utilia para este escanrio 
-[simple-iaas.jpg](https://postimg.cc/HrdLkXwg)
 
-### Descripcion del escenario
+[![simple-iaas.jpg](https://i.postimg.cc/P58vKMNP/simple-iaas.jpg)](https://postimg.cc/HrdLkXwg)
+Arquitectura de referencia en donde se implementa  un VNET con dos subredes (Frontend y Backend), ambas maquinas con Windows Server 
+No se incluye el despligue de DB
+
+
+### Prerequisitos
+Contar con una suscripción de Azure, para el caso específico de QPoC estamos usando SKU que no descuenten del saldo de los 200 dolares que ofrecen la suscripción de Azure Free
