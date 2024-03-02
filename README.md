@@ -19,4 +19,5 @@ Este escenario tiene como objetivo probar algunas de las capacidades de infraest
 Arquitectura de referencia en donde se implementa  un VNET con dos subredes (Frontend y Backend), ambas maquinas con Windows Server 
 No se incluye el despligue de DB
 
-## Contenido 
+## Contenido IaaS PoC
+en los archivos se encuentr la lista de parametros y el .json que permite despliegar automaticamente el ambiente propuesto
