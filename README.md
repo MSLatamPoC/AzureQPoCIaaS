@@ -40,3 +40,5 @@ para optimizar los recursos limitados las maquinas virtuales tienen configurado 
 ## Suscripción free en Azure 
 - [Condiciones de las suscripciones gratuitas](https://azure.microsoft.com/es-es/free/free-account-faq/)
 - [Evitar cargos en cuenta gratuita de Azure](https://learn.microsoft.com/es-es/azure/cost-management-billing/manage/avoid-charges-free-account)
+- [Como crear una suscripcion de Azure Gratuita](https://www.youtube.com/watch?v=iYVZapTEO0Q)
+ 
