@@ -19,5 +19,17 @@ Este escenario tiene como objetivo probar algunas de las capacidades de infraest
 Arquitectura de referencia en donde se implementa  un VNET con dos subredes (Frontend y Backend), ambas maquinas con Windows Server 
 No se incluye el despligue de DB
 
-## Contenido IaaS PoC
-en los archivos se encuentr la lista de parametros y el .json que permite despliegar automaticamente el ambiente propuesto
+## Parametros
+Los parámetros permiten modificar la configuración del ARM Template para QPoC estos son algunos de los parámetros a tener en cuenta si se quiere modificar el despliegue:
+-	Nombres: se encuentran dos tipos de nombre según sea la máquina virtual "virtualMachineName1" (VM-FRONT, VM-BACK) a la que están asociados de esta forma vamos a ver que recursos como las tarjetas de red "networkInterfaceName1", network security group "networkSecurityGroupName1", ip públicas  "publicIpAddressName1" entre otros.
+-	Redes: la VNET se llama VNET-POC y esta segmentada por defecto Enel parámetro “addressPrefixes” 192-18.0.0/16 también se crean dos subnets "subnets" SUBNET-FRONT 192.168.10.0/24 y SUBNET-BACKEND 192.168.20.0/24.
+-	Tipo de máquina virtual: el tamaño de las máquinas virtuales puede cambiarse en el parámetro “virtualMachineSize", 
+Nota: por defecto está configurado Standard_B1s este SKU es gratuito por 750 horas mensuales
+-	Usuario y contraseña: el parámetro "adminUsername" es el nombre del usuario administrador de Windows, por defecto es Adminpoc, "adminPassword" la clafe de Windows por defecto es MSLatam2024*/
+-	Auto apagado: para optimizar los recursos limitados las maquinas virtuales tienen configurado un auto apagado los parámetros a tener en cuenta son “autoShutdownTime" la hora del apagado es 20:00 8:00pm, "autoShutdownTimeZone" zona horaria algunas zonas horarias son:
+  --SA Pacific Standard Time: 	(UTC-05:00) Bogota, Lima, Quito, Rio Branco
+o	Central Standard Time (Mexico): (UTC-06:00) Guadalajara, Mexico City, Monterrey
+o	Pacific SA Standard Time: (UTC-04:00) Santiago
+![Lista de zonas horarias](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/timezones-overview?view=azuresql#list-of-supported-time-zones )
+
+
