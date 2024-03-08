@@ -31,7 +31,7 @@ Nota: por defecto está configurado Standard_B1s este SKU es gratuito por 750 ho
 ### Usuario y contraseña
 el parámetro "adminUsername" es el nombre del usuario administrador de Windows, por defecto es Adminpoc, "adminPassword" la clafe de Windows por defecto es MSPOCLatam2024*/
 ###	Auto apagado 
-para optimizar los recursos limitados las maquinas virtuales tienen configurado un auto apagado los parámetros a tener en cuenta son “autoShutdownTime" la hora del apagado es 20:00 8:00pm, "autoShutdownTimeZone" zona horaria algunas zonas horarias son:
+para optimizar los recursos limitados las maquinas virtuales tienen configurado un auto apagado los parámetros a tener en cuenta son "autoShutdownNotificationEmail" este es el espacio para el mail de notificiacion de auto apagado, “autoShutdownTime" la hora del apagado es 20:00 8:00pm y "autoShutdownTimeZone" zona horaria algunas zonas horarias son:
   - SA Pacific Standard Time: 	(UTC-05:00) Bogota, Lima, Quito, Rio Branco
   -	Central Standard Time (Mexico): (UTC-06:00) Guadalajara, Mexico City, Monterrey
   -	Pacific SA Standard Time: (UTC-04:00) Santiago
