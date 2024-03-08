@@ -37,4 +37,6 @@ para optimizar los recursos limitados las maquinas virtuales tienen configurado 
   -	Pacific SA Standard Time: (UTC-04:00) Santiago
 [Lista de zonas horarias](https://learn.microsoft.com/en-us/azure/azure-sql/managed-instance/timezones-overview?view=azuresql#list-of-supported-time-zones )
 
-
+## Suscripción free en Azure 
+- [Condiciones de las suscripciones gratuitas](https://azure.microsoft.com/es-es/free/free-account-faq/)
+- [Evitar cargos en cuenta gratuita de Azure](https://learn.microsoft.com/es-es/azure/cost-management-billing/manage/avoid-charges-free-account)
