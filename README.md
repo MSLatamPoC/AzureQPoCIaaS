@@ -41,4 +41,10 @@ para optimizar los recursos limitados las maquinas virtuales tienen configurado 
 - [Condiciones de las suscripciones gratuitas](https://azure.microsoft.com/es-es/free/free-account-faq/)
 - [Evitar cargos en cuenta gratuita de Azure](https://learn.microsoft.com/es-es/azure/cost-management-billing/manage/avoid-charges-free-account)
 - [Como crear una suscripcion de Azure Gratuita](https://www.youtube.com/watch?v=iYVZapTEO0Q)
+
+## Como ejecutar un ARM Template
+
+- [Edición e implementación de la plantilla mediante Azure portal](https://learn.microsoft.com/es-es/azure/azure-resource-manager/templates/quickstart-create-templates-use-the-portal#edit-and-deploy-the-template)
+- [Edición e implementación de la plantilla mediante Visual Studio](https://learn.microsoft.com/es-es/azure/azure-resource-manager/templates/quickstart-create-templates-use-visual-studio-code?tabs=CLI#deploy-the-template)
+- [Comprobación de la implementación](https://learn.microsoft.com/es-es/azure/azure-resource-manager/templates/template-tutorial-create-first-template?tabs=azure-powershell#verify-deployment)
  
