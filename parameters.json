@@ -1,0 +1,155 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "networkInterfaceName1": {
+            "value": "vm-front634_z1"
+        },
+        "networkInterfaceName2": {
+            "value": "vm-backt634_z1"
+        },
+        "networkSecurityGroupName1": {
+            "value": "VM-FRONT-nsg"
+        },
+        "networkSecurityGroupName2": {
+            "value": "VM-BACK-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "RDP",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "3389"
+                    }
+                }
+            ]
+        },
+        "subnetName1": {
+            "value": "SUBNET-FRONTEND"
+        },
+        "subnetName2": {
+            "value": "SUBNET-BACKEND"
+        },
+        "virtualNetworkName": {
+            "value": "VNET-POC"
+        },
+        "addressPrefixes": {
+            "value": [
+                "192.168.0.0/16"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "SUBNET-FRONT",
+                    "properties": {
+                        "addressPrefix": "192.168.10.0/24"
+                    }
+                },
+                {
+                    "name": "SUBNET-BACKEND",
+                    "properties": {
+                        "addressPrefix": "192.168.20.0/24"
+                    }
+                }
+            ]
+        },
+        "publicIpAddressName1": {
+            "value": "VM-FRONT-ip"
+        },
+        "publicIpAddressName2": {
+            "value": "VM-BACK-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Static"
+        },
+        "publicIpAddressSku": {
+            "value": "Standard"
+        },
+        "pipDeleteOption": {
+            "value": "Detach"
+        },
+        "virtualMachineName1": {
+            "value": "VM-FRONT"
+        },
+        "virtualMachineName2": {
+            "value": "VM-BACK"
+        },
+        "virtualMachineComputerName1": {
+            "value": "VM-FRONT"
+        },
+        "virtualMachineComputerName2": {
+            "value": "VM-BACK"
+        },
+        "virtualMachineRG": {
+            "value": "RG-POC"
+        },
+        "osDiskType": {
+            "value": "Standard_LRS"
+        },
+        "osDiskDeleteOption": {
+            "value": "Delete"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_B1s"
+        },
+        "nicDeleteOption": {
+            "value": "Detach"
+        },
+        "hibernationEnabled": {
+            "value": false
+        },
+        "adminUsername": {
+            "value": "Adminpoc"
+        },
+        "adminPassword": {
+            "value": "MSLatam2024*/"
+        },
+        "patchMode": {
+            "value": "AutomaticByOS"
+        },
+        "enableHotpatching": {
+            "value": false
+        },
+        "securityType": {
+            "value": "TrustedLaunch"
+        },
+        "secureBoot": {
+            "value": true
+        },
+        "vTPM": {
+            "value": true
+        },
+        "virtualMachine1Zone": {
+            "value": "1"
+        },
+        "autoShutdownStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownTime": {
+            "value": "20:00"
+        },
+        "autoShutdownTimeZone": {
+            "value": "SA Pacific Standard Time"
+        },
+        "autoShutdownNotificationStatus": {
+            "value": "Enabled"
+        },
+        "autoShutdownNotificationLocale": {
+            "value": "en"
+        },
+        "autoShutdownNotificationEmail": {
+            "value": "micorreo@outlook.com"
+        }
+    }
+}
